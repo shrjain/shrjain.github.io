@@ -100,8 +100,8 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #888;
 		font-family: "Lato", sans-serif;
-		font-size: 16pt;
-		font-weight: 400;
+		font-size: 15pt;
+		font-weight: 350;
 		line-height: 1.75em;
 	}
 
@@ -2643,7 +2643,7 @@ input, select, textarea {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 35%;
 		}
 
 			.features article .image img {
