@@ -1,531 +1,671 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Shrainik Jain</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrainik Jain — Software Engineer & Researcher</title>
+  <meta name="description" content="Shrainik Jain is a Software Engineer at Snowflake and Computer Science PhD from University of Washington, specializing in SQL query optimization, workload analytics, and database systems." />
+  <meta name="author" content="Shrainik Jain" />
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/me.JPG" alt="" /></span>
-					<!-- <h1 id="logo"><a href="#">Shrainik Jain</a></h1> -->
-					<!-- <p>Doctoral Student in Computer Science</p> -->
-					<!-- <p>shrainik@cs.washington.edu</p> -->
-					<!-- <p>CSE 370</p> -->
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Research</a></li>
-						<li><a href="#publications">Publications</a></li>
-						<li><a href="#three">Past Projects</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://twitter.com/ShrainikJ" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/shrainik" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/shrainik/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/shrjain" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="shrainik@cs.washington.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shrainik Jain" />
+  <meta property="og:description" content="Software Engineer at Snowflake. PhD in Computer Science from University of Washington. Research in SQL workload analytics &amp; query optimization." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shrjain.github.io" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-				<!-- Main -->
-					<div id="main">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-						<!-- One -->
-							<section id="one">
-								<!-- <div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div> -->
-								<div class="container">
-									<header class="major">
-										<h3>Hi, I'm Shrainik Jain.</h3>
-									</header>
-									<p>
-										I am a Computer Science PhD graduate from the <a href="https://www.cs.washington.edu/">Paul G. Allen School for Computer Science and Engineering</a>, University of Washington. My research focuses on learning query representations, generalized SQL workload analytics, high-variety scientific data management, and federated databases.
-									</p>
-									<p>
-										I currently work as a Software Engineer at <a href="https://www.snowflake.com/">Snowflake</a> where I fiddle with the SQL compiler and query optimizer. 
-									</p>
-								</div>
-							</section>
+  <!-- Theme: apply before render to prevent flash -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>I am a part of the UW DB group</h3>
-									<p> .. and am currently working with my advisors <a href="https://faculty.washington.edu/billhowe/" target="_blank">Bill Howe</a> and <a href="http://www.cs.washington.edu/people/faculty/lazowska" target="_blank">Ed Lazowska</a> on generalized SQL workload analytics.</p>
-									<div class="features">
-										<article>
-											<a href="http://cidrdb.org/cidr2019/papers/p110-jain-cidr19.pdf" class="image"><img src="images/querc.png" alt="" /></a>
-											<div class="inner">
-												<h4>Querc: Generalized SQL Workload analytics</h4>
-												<p>Using learned query representations to enable Workload Management tasks and Machine Learning for Databases.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://arxiv.org/pdf/1801.05613.pdf" class="image"><img src="images/query2vec.png" alt="" /></a>
-											<div class="inner">
-												<h4>Learning Query Representations</h4>
-												<p>Exploring NLP techniques for representation learning on SQL to enable downstream workload management applications.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://faculty.washington.edu/billhowe//projects/2014/03/22/SQLShare.html" class="image"><img src="images/sqlshare.png" alt="" /></a>
-											<div class="inner">
-												<h4>SQLShare: DB-as-a-Service</h4>
-												<p>One of the developers for the <a href="https://uwescience.github.io/sqlshare/">SQLShare</a> project. I fiddle with its user <a href="https://uwescience.github.io/sqlshare/data_release.html">query logs</a> and find <a href="https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf">interesting things</a>.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://faculty.washington.edu/billhowe//projects/2014/08/22/RACO-Big-Data-Middleware.html" class="image"><img src="images/raco_arch.png" alt="" /></a>
-											<div class="inner">
-												<h4>Polystore Data Management</h4>
-												<p>We are trying to build a query compiler and middleware which optimizes queries across multiple backends, figuring out the best system to run subplans on.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Shrainik Jain — home">SJ</a>
 
-							<!-- publications -->
-						
-							<section id="publications">
-								<div class="container">
-									<h3>Publications and Patents</h3>
-									<ul>
-										<li><b>Database-Agnostic Workload Management</b>: <b>Shrainik Jain</b>, Jiaqi Yan, Thierry Cruanes, BillHowe. In proceedings of the 9th biennial Conference on Innovative Data Systems Research (CIDR 2019). (<a href="http://cidrdb.org/cidr2019/papers/p110-jain-cidr19.pdf">pdf</a>)</li>
-										<li><b>Query2Vec: An Evaluation of NLP Techniques for Generalized Workload Analytics</b>: <b>Shrainik Jain</b>, Bill Howe, Jiaqi Yan, Thierry Cruanes. In ArXiv e-prints (Jan. 2018) arXiv:cs.DB/1801.05613.  (<a href="https://arxiv.org/pdf/1801.05613.pdf">pdf</a>)</li>
-										<li><b>Snowtrail: Testing with Production Queries on a Cloud Database</b>:, Jiaqi Yan, Qiuye Jin, <b>Shrainik Jain</b>, Stratis D. Viglas, Allison Lee. In proceedings of 7th International Workshopon Testing Database Systems (DBTEST 2018). US Patent Application No.: 62/646,817.  (<a href="papers/snowtrail-testing-with-production-series-on-a-cloud-database.pdf">pdf</a>)</li>
-										<li><b>The Myria Big Data Management and Analytics System and Cloud Service</b>: Jingjing Wang, Tobin Baker, Magdalena Balazinska, Dan Halperin, Brandon Haynes, Bill Howe, Dylan Hutchison, <b>Shrainik Jain</b>, Ryan Maas, Parmita Mehta, Dominik Moritz, Brandon Myers, Jennifer Ortiz, Dan Suciu, Andrew Whitaker, and Shengliang Xu, In proceedings of the 8th biennial Conference on Innovative Data Systems Research (CIDR).</li>
-										<li><b>Data Cleaning in the Wild: Reusable Curation Idioms from a Multi-Year SQL Workload</b>: <b>Shrainik Jain</b>, Bill Howe, In proceedings of the 11th International Workshop on Quality in DataBases. (<a href="papers/QDB2016-datacleaning.pdf">draft</a>) (<a href="citations/DCintheWild.bib">bibtex</a>)</li>
-										<li><b>SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment</b>: <b>Shrainik Jain</b>, Dominik Moritz, Daniel Halperin, Bill Howe, Ed Lazowska, In proceedings of the 2016 ACM SIGMOD International Conference on Management of Data. (<a href="https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf">pdf</a>) (<a href="https://www.dropbox.com/s/439z6x731o2pzz7/self-bibtex.bib?dl=0">bibtex</a>) (<b style="color:red;">Reproducibility Award</b>)</li>
-										<li><b>High Variety Cloud Databases</b>: <b>Shrainik Jain</b>, Dominik Moritz, Bill Howe, In proceedings of the 2016 IEEE Cloud Data Management Workshop. (<a href="https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf">pdf</a>) (<a href="https://www.dropbox.com/s/idj7x9olwdkyuk6/self-bibtex.bib?dl=0">bibtex</a>)</li>
-										<li><b>Pattern Formation for Asynchronous Robots without Agreement in Chirality</b>: Sruti Gan Chaudhuri, Swapnil Ghike, <b>Shrainik Jain</b>, Krishnendu Mukhopadhyaya. (<a href="http://arxiv.org/pdf/1403.2625v1.pdf">pdf</a>) (<a href="ChaudhuriGJM14.bib">bibtex</a>)</li>
-									</ul>
-								</div>
-							</section>
+      <ul class="nav-links" id="navLinks" role="list" aria-hidden="false">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Here's some stuff I have done in the past.</h3>
-									<p>In no particular order, importance, or chronology.</p>
-									<div class="features">
-										<article>
-											<a href="http://research.microsoft.com/en-us/projects/orleans/" class="image"><img src="images/Orleans.png" alt="" /></a>
-											<div class="inner">
-												<h4>JavaScript Orleans</h4>
-												<p>Introduced support for dynamic types and JavaScript development to project Orleans during my internship at <strong>Microsoft Research, Redmond.</strong></p>
-											</div>
-										</article>
-										<article>
-											<a href="http://arxiv.org/abs/1403.2625" class="image"><img src="images/robots.JPG" alt="" /></a>
-											<div class="inner">
-												<h4>Pattern Formation by Swarm Robots</h4>
-												<p>Over the summer of my junior year in undergrad, I interned at the <a href="http://www.isical.ac.in/~acmu/index.html">Indian Statistical Institute, Kolkata</a>. The result was <a href="http://arxiv.org/abs/1403.2625">this</a>. Image <a href="http://en.wikipedia.org/wiki/Swarm_behaviour#mediaviewer/File:Kilobot_robot_swarm.JPG">Source</a>.</p>
-											</div>
-										</article>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle theme">
+          <!-- Icon injected by JS -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-										<article>
-											<a href="http://azure.microsoft.com/en-us/services/site-recovery/" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><a href="http://azure.microsoft.com/en-us/services/site-recovery/">Disaster Recovery as a Service</a></h4>
-												<p>Also during my stint at Microsoft India Development Center, I was the part of the team responsible for building HyperV FR based Disaster Recovery as a Service or <strong>Azure Site Recovery</strong> as it is popularly known as.</p>
-											</div>
-										</article>
-										<article>
-											<a href="https://www.mohoro.com/" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><a href="https://www.mohoro.com/">MOHORO</a></h4>
-												<p>Was a part of the team responsible for making MOHORO, a scalable, pay-by-usage Desktop-as-a-Service on Azure. Project served as a precursor to <a href="https://www.remoteapp.windowsazure.com/">Microsoft Azure RemoteApp</a>. This was during my stint as an SDET at Microsoft India Development Center.</p>
-											</div>
-										</article>
-										<article>
-											<a href="http://www.iirs.gov.in/photogrammetry%26remotesensing" class="image"><img src="images/iirs.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Visualizing Satellite Data</h4>
-												<p>As a summer intern at the <a href="http://www.iirs.gov.in/">Indian Institute of Remote Sensing</a>, Indian Space Research Organization (IIRS-ISRO), I built a tool to visualize raw statelite data on maps and 3D plots. Image <a href="http://www.iirs.gov.in/iirs/sites/default/files/banner2_0_0.jpg">Source</a>.</p>
-											</div>
-										</article>
-										<article>
-											<a href="http://www.bits-pilani.ac.in/pilani/" class="image"><img src="images/bitslogo.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>More...</h4>
-												<p>As an undergraduate at the Birla Institute of Technology and Science, <strong><a href="http://www.bits-pilani.ac.in/pilani/">BITS, Pilani</a></strong>, I spent most of my time being clueless. Apart from being lost, I was a TA, President and Project forum in-charge (mentor) for the <a href="http://bits-csa.org/">Computer Science Association</a> at various times of my undergrad.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Shrainik Jain</h1>
+        <p class="hero-role">
+          Software Engineer at <strong><a href="https://www.snowflake.com/" target="_blank" rel="noopener">Snowflake</a></strong>
+        </p>
+        <p class="hero-tagline">
+          PhD in CS from University of Washington · SQL compiler &amp; query optimizer · Database systems researcher
+        </p>
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">View Research</a>
+          <a href="#publications" class="btn btn-outline">Publications</a>
+        </div>
 
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+        <div class="hero-social" aria-label="Social links">
+          <!-- GitHub -->
+          <a href="https://github.com/shrjain" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <!-- Twitter/X -->
+          <a href="https://twitter.com/ShrainikJ" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/shrainikjain" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:shrainik@cs.washington.edu" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+      <div class="hero-avatar" aria-hidden="true">
+        <img src="images/me.JPG" alt="Shrainik Jain" />
+      </div>
+    </div>
+  </section>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Background</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-delay-1">
+          <p>
+            I'm a Computer Science PhD graduate from the
+            <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener">Paul G. Allen School</a>
+            at the University of Washington, where I worked with advisors
+            <a href="https://faculty.washington.edu/billhowe/" target="_blank" rel="noopener">Bill Howe</a>
+            and
+            <a href="http://www.cs.washington.edu/people/faculty/lazowska" target="_blank" rel="noopener">Ed Lazowska</a>
+            on generalized SQL workload analytics.
+          </p>
+          <p>
+            My research lies at the intersection of <strong>database systems</strong> and
+            <strong>machine learning</strong> — exploring how NLP techniques can be applied to
+            SQL to enable smarter workload management, query optimization, and data discovery.
+          </p>
+          <p>
+            Currently, I work as a Software Engineer at
+            <a href="https://www.snowflake.com/" target="_blank" rel="noopener">Snowflake</a>,
+            where I work on the SQL compiler and query optimizer, helping make cloud-scale
+            analytics faster and more intelligent.
+          </p>
+          <p>
+            Before my PhD, I was an engineer at
+            <strong>Microsoft India Development Center</strong>, where I helped build Azure
+            Site Recovery and MOHORO (the precursor to Azure RemoteApp). I completed my
+            undergraduate degree in Computer Science at
+            <a href="http://www.bits-pilani.ac.in/pilani/" target="_blank" rel="noopener">BITS Pilani</a>.
+          </p>
+        </div>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+        <div class="about-cards reveal reveal-delay-2">
+          <div class="about-card">
+            <span class="about-card-icon">❄️</span>
+            <div class="about-card-text">
+              <h4>Software Engineer</h4>
+              <p>Snowflake — SQL compiler &amp; query optimizer</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🎓</span>
+            <div class="about-card-text">
+              <h4>PhD, Computer Science</h4>
+              <p>University of Washington (Paul G. Allen School)</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🔬</span>
+            <div class="about-card-text">
+              <h4>Research</h4>
+              <p>SQL workload analytics, query representation learning</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🏛️</span>
+            <div class="about-card-text">
+              <h4>B.E., Computer Science</h4>
+              <p>BITS Pilani</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+  <!-- ============================================================
+       EXPERIENCE
+       ============================================================ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Career</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+      <div class="timeline">
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Software Engineer</div>
+              <div class="timeline-company">
+                <a href="https://www.snowflake.com/" target="_blank" rel="noopener">Snowflake</a>
+              </div>
+            </div>
+            <span class="timeline-period">2019 – Present</span>
+          </div>
+          <p class="timeline-desc">
+            Working on the SQL compiler and query optimizer. Delivered Snowtrail — a production
+            query testing system that replays and compares query behavior across compiler versions.
+            Improving query plan quality and optimizer correctness at cloud scale.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Query Optimization</span>
+            <span class="tag">Compiler</span>
+            <span class="tag">Cloud Databases</span>
+          </div>
+        </div>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-											<li><a href="#" class="button icon fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">PhD Researcher</div>
+              <div class="timeline-company">
+                <a href="https://db.cs.washington.edu/" target="_blank" rel="noopener">UW Database Group</a>
+              </div>
+            </div>
+            <span class="timeline-period">2014 – 2019</span>
+          </div>
+          <p class="timeline-desc">
+            Developed Querc, a system for database-agnostic workload management using learned
+            query representations. Investigated NLP techniques (word2vec, paragraph vectors) applied
+            to SQL. Maintained and analyzed the SQLShare DB-as-a-Service platform, publishing findings
+            at SIGMOD 2016, CIDR 2019, and other top venues.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">Research</span>
+            <span class="tag">NLP</span>
+            <span class="tag">SQL Analytics</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Research Intern</div>
+              <div class="timeline-company">
+                <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener">Microsoft Research, Redmond</a>
+              </div>
+            </div>
+            <span class="timeline-period">2015</span>
+          </div>
+          <p class="timeline-desc">
+            Introduced support for dynamic types and JavaScript development to
+            <a href="https://dotnet.github.io/orleans/" target="_blank" rel="noopener">Project Orleans</a>,
+            Microsoft's distributed actor framework — enabling a new class of JavaScript-based
+            distributed applications on .NET.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Orleans</span>
+            <span class="tag">.NET</span>
+          </div>
+        </div>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Software Dev Engineer in Test (SDET)</div>
+              <div class="timeline-company">
+                <a href="https://azure.microsoft.com/" target="_blank" rel="noopener">Microsoft India Development Center</a>
+              </div>
+            </div>
+            <span class="timeline-period">2012 – 2014</span>
+          </div>
+          <p class="timeline-desc">
+            Built HyperV-based Disaster Recovery as a Service (now
+            <a href="https://azure.microsoft.com/en-us/services/site-recovery/" target="_blank" rel="noopener">Azure Site Recovery</a>).
+            Was part of the team that created MOHORO, a scalable pay-by-usage Desktop-as-a-Service
+            on Azure that served as the precursor to
+            <a href="https://azure.microsoft.com/" target="_blank" rel="noopener">Azure RemoteApp</a>.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">Azure</span>
+            <span class="tag">HyperV</span>
+            <span class="tag">Cloud</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
 
-								</div>
-							</section>
-						-->
+        <div class="timeline-item reveal reveal-delay-5">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Research Intern</div>
+              <div class="timeline-company">
+                <a href="http://www.isical.ac.in/" target="_blank" rel="noopener">Indian Statistical Institute, Kolkata</a>
+              </div>
+            </div>
+            <span class="timeline-period">2011</span>
+          </div>
+          <p class="timeline-desc">
+            Researched autonomous pattern formation algorithms for asynchronous swarm robots
+            without agreement on chirality. The resulting work was published in a peer-reviewed
+            paper on theoretical distributed robotics.
+          </p>
+          <div class="timeline-tags">
+            <span class="tag">Distributed Algorithms</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Theory</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					</div>
+  <!-- ============================================================
+       RESEARCH
+       ============================================================ -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Research</h2>
+      </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Shrainik Jain. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+      <div class="research-grid">
+        <article class="research-card reveal reveal-delay-1">
+          <div class="research-card-img">
+            <img src="images/querc.png" alt="Querc: Database-Agnostic Workload Management" loading="lazy" />
+          </div>
+          <div class="research-card-body">
+            <h4>Querc: Database-Agnostic Workload Management</h4>
+            <p>
+              A system enabling generalized workload management tasks using learned query
+              representations — applied to diverse SQL workloads across different database backends.
+              Published at CIDR 2019.
+            </p>
+            <a href="http://cidrdb.org/cidr2019/papers/p110-jain-cidr19.pdf" class="research-card-link" target="_blank" rel="noopener">
+              Read paper
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </article>
 
-			</div>
+        <article class="research-card reveal reveal-delay-2">
+          <div class="research-card-img">
+            <img src="images/query2vec.png" alt="Query2Vec: NLP for SQL" loading="lazy" />
+          </div>
+          <div class="research-card-body">
+            <h4>Query2Vec: Learning Query Representations</h4>
+            <p>
+              Systematically evaluated NLP embedding techniques — word2vec, paragraph vectors,
+              and graph methods — applied to SQL to enable downstream workload management
+              tasks like query recommendation and anomaly detection.
+            </p>
+            <a href="https://arxiv.org/pdf/1801.05613.pdf" class="research-card-link" target="_blank" rel="noopener">
+              Read paper
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <article class="research-card reveal reveal-delay-3">
+          <div class="research-card-img">
+            <img src="images/sqlshare.png" alt="SQLShare: DB-as-a-Service" loading="lazy" />
+          </div>
+          <div class="research-card-body">
+            <h4>SQLShare: DB-as-a-Service</h4>
+            <p>
+              A multi-year SQL-as-a-Service platform used by scientists to share and query
+              datasets. Analyzed real-world query logs to uncover patterns in data cleaning,
+              schema usage, and SQL behavior in the wild. SIGMOD 2016 Reproducibility Award.
+            </p>
+            <a href="https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf" class="research-card-link" target="_blank" rel="noopener">
+              Read paper
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </article>
 
-	</body>
+        <article class="research-card reveal reveal-delay-4">
+          <div class="research-card-img">
+            <img src="images/raco_arch.png" alt="Polystore Data Management" loading="lazy" />
+          </div>
+          <div class="research-card-body">
+            <h4>Polystore Data Management</h4>
+            <p>
+              Contributed to RACO — a query compiler and middleware that optimizes queries
+              across heterogeneous backends (relational, NoSQL, parallel systems), choosing
+              the best execution plan across multiple storage systems.
+            </p>
+            <a href="https://faculty.washington.edu/billhowe//projects/2014/08/22/RACO-Big-Data-Middleware.html" class="research-card-link" target="_blank" rel="noopener">
+              Learn more
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PUBLICATIONS
+       ============================================================ -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Academic</p>
+        <h2 class="section-title">Publications &amp; Patents</h2>
+      </div>
+
+      <div class="publications-list">
+
+        <div class="pub-item reveal reveal-delay-1">
+          <div class="pub-title">Database-Agnostic Workload Management</div>
+          <div class="pub-authors">
+            <strong>Shrainik Jain</strong>, Jiaqi Yan, Thierry Cruanes, Bill Howe
+          </div>
+          <div class="pub-venue">9th Conference on Innovative Data Systems Research (CIDR 2019)</div>
+          <div class="pub-footer">
+            <a href="http://cidrdb.org/cidr2019/papers/p110-jain-cidr19.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-2">
+          <div class="pub-title">Query2Vec: An Evaluation of NLP Techniques for Generalized Workload Analytics</div>
+          <div class="pub-authors">
+            <strong>Shrainik Jain</strong>, Bill Howe, Jiaqi Yan, Thierry Cruanes
+          </div>
+          <div class="pub-venue">arXiv e-prints, January 2018 — arXiv:cs.DB/1801.05613</div>
+          <div class="pub-footer">
+            <a href="https://arxiv.org/pdf/1801.05613.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+            <a href="https://arxiv.org/abs/1801.05613" class="pub-link" target="_blank" rel="noopener">arXiv</a>
+          </div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-3">
+          <div class="pub-title">Snowtrail: Testing with Production Queries on a Cloud Database</div>
+          <div class="pub-authors">
+            Jiaqi Yan, Qiuye Jin, <strong>Shrainik Jain</strong>, Stratis D. Viglas, Allison Lee
+          </div>
+          <div class="pub-venue">7th International Workshop on Testing Database Systems (DBTest 2018) · US Patent Application No.: 62/646,817</div>
+          <div class="pub-footer">
+            <a href="papers/snowtrail-testing-with-production-series-on-a-cloud-database.pdf" class="pub-link">PDF</a>
+          </div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-4">
+          <div class="pub-title">The Myria Big Data Management and Analytics System and Cloud Service</div>
+          <div class="pub-authors">
+            Jingjing Wang, Tobin Baker, Magdalena Balazinska, Dan Halperin, Brandon Haynes, Bill Howe, Dylan Hutchison, <strong>Shrainik Jain</strong>, Ryan Maas, Parmita Mehta, Dominik Moritz, Brandon Myers, Jennifer Ortiz, Dan Suciu, Andrew Whitaker, Shengliang Xu
+          </div>
+          <div class="pub-venue">8th Conference on Innovative Data Systems Research (CIDR 2017)</div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-1">
+          <div class="pub-title">Data Cleaning in the Wild: Reusable Curation Idioms from a Multi-Year SQL Workload</div>
+          <div class="pub-authors"><strong>Shrainik Jain</strong>, Bill Howe</div>
+          <div class="pub-venue">11th International Workshop on Quality in Databases (QDB 2016)</div>
+          <div class="pub-footer">
+            <a href="papers/QDB2016-datacleaning.pdf" class="pub-link">Draft</a>
+            <a href="citations/DCintheWild.bib" class="pub-link">BibTeX</a>
+          </div>
+        </div>
+
+        <div class="pub-item award reveal reveal-delay-2">
+          <div class="pub-title">SQLShare: Results from a Multi-Year SQL-as-a-Service Experiment</div>
+          <div class="pub-authors">
+            <strong>Shrainik Jain</strong>, Dominik Moritz, Daniel Halperin, Bill Howe, Ed Lazowska
+          </div>
+          <div class="pub-venue">ACM SIGMOD International Conference on Management of Data, 2016</div>
+          <div class="pub-footer">
+            <a href="https://uwescience.github.io/sqlshare/pdfs/sqlshare_shrainik.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+            <a href="https://www.dropbox.com/s/439z6x731o2pzz7/self-bibtex.bib?dl=0" class="pub-link" target="_blank" rel="noopener">BibTeX</a>
+            <span class="award-badge">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Reproducibility Award
+            </span>
+          </div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-3">
+          <div class="pub-title">High Variety Cloud Databases</div>
+          <div class="pub-authors"><strong>Shrainik Jain</strong>, Dominik Moritz, Bill Howe</div>
+          <div class="pub-venue">IEEE Cloud Data Management Workshop (co-located with ICDE 2016)</div>
+          <div class="pub-footer">
+            <a href="https://uwescience.github.io/sqlshare/pdfs/ICDE16_research_5.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+            <a href="https://www.dropbox.com/s/idj7x9olwdkyuk6/self-bibtex.bib?dl=0" class="pub-link" target="_blank" rel="noopener">BibTeX</a>
+          </div>
+        </div>
+
+        <div class="pub-item reveal reveal-delay-4">
+          <div class="pub-title">Pattern Formation for Asynchronous Robots without Agreement in Chirality</div>
+          <div class="pub-authors">
+            Sruti Gan Chaudhuri, Swapnil Ghike, <strong>Shrainik Jain</strong>, Krishnendu Mukhopadhyaya
+          </div>
+          <div class="pub-venue">Theoretical Computer Science</div>
+          <div class="pub-footer">
+            <a href="http://arxiv.org/pdf/1403.2625v1.pdf" class="pub-link" target="_blank" rel="noopener">PDF</a>
+            <a href="ChaudhuriGJM14.bib" class="pub-link">BibTeX</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Toolkit</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal reveal-delay-1">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C++</span>
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Scala</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-2">
+          <h4>Database Systems</h4>
+          <div class="skill-tags">
+            <span class="tag">Query Optimization</span>
+            <span class="tag">SQL Compiler</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Myria</span>
+            <span class="tag">SQLShare</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-3">
+          <h4>Machine Learning</h4>
+          <div class="skill-tags">
+            <span class="tag">Word2Vec</span>
+            <span class="tag">Representation Learning</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-4">
+          <h4>Cloud &amp; Infrastructure</h4>
+          <div class="skill-tags">
+            <span class="tag">Azure</span>
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Orleans</span>
+            <span class="tag">HyperV</span>
+            <span class="tag">Cloud Storage</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-1">
+          <h4>Research</h4>
+          <div class="skill-tags">
+            <span class="tag">Workload Analytics</span>
+            <span class="tag">Federated Databases</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Systems Research</span>
+            <span class="tag">Academic Writing</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal reveal-delay-2">
+          <h4>Tools</h4>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Jupyter</span>
+            <span class="tag">LaTeX</span>
+            <span class="tag">Vim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-text reveal reveal-delay-1">
+          <p>
+            I'm always happy to chat about database systems, query optimization, machine
+            learning for databases, or interesting engineering problems. Feel free to reach
+            out via email or connect on social media.
+          </p>
+          <p>
+            You can also check out my research and code on GitHub.
+          </p>
+        </div>
+
+        <div class="contact-links reveal reveal-delay-2">
+          <a href="mailto:shrainik@cs.washington.edu" class="contact-link">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            shrainik@cs.washington.edu
+          </a>
+
+          <a href="https://github.com/shrjain" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </span>
+            github.com/shrjain
+          </a>
+
+          <a href="https://twitter.com/ShrainikJ" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </span>
+            @ShrainikJ
+          </a>
+
+          <a href="https://www.linkedin.com/in/shrainikjain" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-link-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </span>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-text">
+        &copy; 2025 Shrainik Jain. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/shrjain" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/scholar?q=Shrainik+Jain" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="mailto:shrainik@cs.washington.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js" defer></script>
+
+</body>
 </html>
